@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     /**
-     * Test Examples with Input and desired output:
+     * Input examples with desired output:
      * N - 2
      * S - 2
      * E - 2
@@ -25,6 +25,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Please write a sequence of moves using the characters N, S, E and O: ");
         PokemonCatcher pc = new PokemonCatcher();
         pc.move(scanner.nextLine());
         System.out.println(pc.getPokemonCount());
